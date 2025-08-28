@@ -1,0 +1,92 @@
+/* Logo */
+.logo-image {
+    background-image: url("https://img.freepik.com/free-vector/luxury-letter-s-logo_1035-8525.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+}
+
+/* Store messages animation */
+.kids-store, .accessories-store, .storybooks, .toys-store {
+    display: none;
+    color: blue;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation-name: message;
+    animation-duration: 4s;
+    position: absolute;
+    left: 210px;
+    top: -31px;
+}
+
+@keyframes message {
+    0% { top: -31px; }
+    25% { top: 90px; }
+    80% { top: 80px; }
+    100% { top: -31px; }
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Submenu */
+nav ul li ul.submenu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: #f0f0f0;
+    padding: 10px 0;
+    list-style: none;
+    min-width: 150px;
+    border: 1px solid #ccc;
+    z-index: 100;
+}
+
+nav ul li ul.submenu li {
+    padding: 8px 15px;
+}
+
+nav ul li ul.submenu li:hover {
+    background-color: #ddd;
+}
+
+/* Show submenu on hover */
+nav ul li:hover ul.submenu {
+    display: block;
+}
+
+/* Navbar icons */
+.nav-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Search input */
+input[type="search"] {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
